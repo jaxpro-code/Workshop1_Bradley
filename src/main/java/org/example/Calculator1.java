@@ -22,7 +22,11 @@ public class Calculator1 {
 
         double M = pirn * (r * (Math.pow((1+r),n)) / (Math.pow(1+r,n) - 1));
 
-        System.out.println(M);
+        double ir = (M * n) - pirn;
+
+        System.out.println("Your monthly payment is " + M + " and you total interest is " + ir + "." );
+
+
 
 
 
