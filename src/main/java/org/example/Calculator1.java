@@ -27,7 +27,6 @@ public class Calculator1 {
 
 
 
-        double test = info.nextDouble();
 
 
 
