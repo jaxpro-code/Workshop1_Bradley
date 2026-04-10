@@ -20,6 +20,11 @@ public class Calculator2 {
         double t = info.nextDouble();
 
         double fv = P * Math.pow((1+(r/365)),365*t);
+        double ie = fv - P;
+
+        System.out.println("Your future vaule will be " + fv + " and your total earned interest is " + ie + ".");
+
+
 
 
 
