@@ -13,13 +13,16 @@ public class Calculator3 {
 
         System.out.println("What is your expected interest rate?");
         double intrest = info.nextDouble();
-        double rate = (intrest/12)/100;
+        double r = (intrest/12)/100;
 
         System.out.println("How many years do you want to be payed out?");
         double pmt = info.nextDouble();
-        double pay = (pmt * 12);
+        double pay = (pmt * -12);
 
-        double pv = pmt * (Math.pow(1-(1+rate),(-pay)) / rate);
+        // pv = pmt * ((1-(1+r)^(-n)) / r)
+        double pv = PMT * ((1-(Math.pow(1+r,pay)))/r);
+
+        System.out.println(pv);
 
 
     }
