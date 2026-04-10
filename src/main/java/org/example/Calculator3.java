@@ -22,7 +22,7 @@ public class Calculator3 {
         // pv = pmt * ((1-(1+r)^(-n)) / r)
         double pv = PMT * ((1-(Math.pow(1+r,pay)))/r);
 
-        System.out.println(pv);
+        System.out.println("The present value $" + pv );
 
 
     }
